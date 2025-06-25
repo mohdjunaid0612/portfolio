@@ -2,7 +2,7 @@ export const project = [
     {
       id: "1",
       name: "Nutricharge Women World",
-      image: "src/assets/images/projects/nutricharge.webp",
+      image: "/src/assets/images/projects/nutricharge.webp",
       des: "Built smooth-animated landing page focused on performance and responsiveness",
       tech_stack: [
         "Bootstrap 5",
@@ -25,7 +25,7 @@ export const project = [
     {
       id: "2",
       name: "SIB Infotech",
-      image: "src/assets/images/projects/sib-infotech.webp",
+      image: "/src/assets/images/projects/sib-infotech.webp",
       des: "A modern website built using Next.js, focusing on speed, SEO, and seamless user experience.",
       tech_stack: [
         "NextJs",
@@ -47,7 +47,7 @@ export const project = [
     {
       id: "3",
       name: "Manisha Bhandari Mishra",
-      image: "src/assets/images/projects/manisha.webp",
+      image: "/src/assets/images/projects/manisha.webp",
       des: "A responsive & clean website crafted using Bootstrap 5, HTML, & CSS for modern UI & mobile-first design.",
       tech_stack: [
         "Bootstrap 5",
@@ -71,7 +71,7 @@ export const project = [
      {
       id: "4",
       name: "B.B. Sheep",
-      image: "src/assets/images/projects/bb-sheep.webp",
+      image: "/src/assets/images/projects/bb-sheep.webp",
       des: "Shopify store with modern design and smart selling features.",
       tech_stack: [
         "Shopify",
