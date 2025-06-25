@@ -8,6 +8,7 @@ import SkillBar from "../component/SkillBar";
 import SkillsService from "../component/SkillsService";
 import careerPath from "../assets/images/img2.jpg";
 import ExperienceTimeline from "../component/ExperienceTimeline";
+import HomeProjectSlider from "../component/HomeProjectSlider";
 
 const Home = () => {
   return (
@@ -22,9 +23,9 @@ const Home = () => {
         >
           <source src={bannerVideo} />
         </video>
-        <div className="bannerText absolute top-0 start-0 w-[100%] pt-[8rem] flex items-center">
+        <div className="bannerText absolute top-0 start-0 w-[100%] h-[100%] pt-[6rem] flex items-center">
           <div className="container mx-auto md:px-4 px-3">
-            <div className="flex w-full gap-4 items-center">
+            <div className="flex w-full gap-4 items-center justify-between">
               <div className="w-[60%] pe-6">
                 <p className="text-sm text-white uppercase">
                   <i className="fab fa-asterisk me-2 text-primary"></i> Welcome
@@ -53,7 +54,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="w-[30%] text-right relative">
-                <div className="w-[450px] h-[450px] p-2 border-2 border-primary rounded-full">
+                <div className="w-[400px] h-[400px] p-2 border-2 border-primary rounded-full">
                   <img
                     className="w-[100%] h-[100%] grayscale  object-cover rounded-full"
                     src={imgProfile}
@@ -207,6 +208,24 @@ const Home = () => {
                 className="w-full rounded-lg"
               />
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 bg-zinc-800">
+        <div className="container mx-auto  md:px-4 px-3">
+          <h3 className="text-5xl leading-tight text-white text-center mt-5">
+            Highlighted{" "}
+            <span className="text-primary font-extrabold">Projects</span>
+          </h3>
+          <p className="mt-5 text-lg text-center text-gray-300">
+            Flex my skills through real work. A showcase of innovative
+            solutions,
+          </p>
+          <p className="mt-1 text-lg text-center text-gray-300">
+            cutting-edge technologies, and impactful user experiences.
+          </p>
+          <div className="mt-10">
+            <HomeProjectSlider />
           </div>
         </div>
       </section>
