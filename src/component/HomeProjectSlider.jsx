@@ -36,7 +36,7 @@ const HomeProjectSlider = () => {
                   className="rounded-t-lg"
                 />
               </div>
-              <div className="p-5">
+              <div className="p-5 h-auto lg:h-[340px]">
                 <div>
                   <span
                     className={`${project.bgColor} inline-block w-[12px] h-[12px] rounded-full me-2`}

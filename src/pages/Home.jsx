@@ -154,7 +154,7 @@ const Home = () => {
                 </div>
               </div>
               <Link className="bg-primary rounded-full mt-8 inline-block text-md py-4 px-8 font-semibold uppercase tracking-widest hover:bg-secondary hover:text-black hover:text-white">
-                More About
+                Let's Work Together
               </Link>
             </div>
           </div>
