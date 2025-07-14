@@ -16,7 +16,7 @@ const Home = () => {
     <Layout>
       <div className="heroSection relative">
         <video
-          className="h-[100vh] w-screen object-cover"
+          className="md:h-[100vh] h-[80vh] w-screen object-cover"
           autoPlay
           muted
           playsInline
