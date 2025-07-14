@@ -70,23 +70,23 @@ const Header = () => {
       <div
         className={`${
           isActive ? "active" : ""
-        } fixed top-0 right-0 translate-x-full w-96 ease-in h-screen overflow-auto bg-black z-20 p-9 transition-transform duration-300`}
+        } fixed top-0 right-0 translate-x-full md:w-96 ease-in h-screen overflow-auto bg-black z-20 p-9 transition-transform duration-300`}
       >
         <div className="text-right">
           <button
             onClick={() => setIsActive(!isActive)}
-            className="text-white mb-4 text-2xl border w-[40px] h-[40px] rounded-full hover:bg-primary hover:text-black hover:border-0"
+            className="text-white md:mb-4 text-2xl border w-[40px] h-[40px] rounded-full hover:bg-primary hover:text-black hover:border-0"
           >
             <i className="fas fa-xmark -translate-y-px"></i>
           </button>
         </div>
         <div className="itemContactSide border-b border-zinc-700 py-5 md:my-5 text-center">
-          <div className="block md:hidden border-b border-zinc-700">
+          <div className="block md:hidden border-b border-zinc-700 md:pb-0 pb-5">
             <ul>
               {menus.map((menu) => (
                 <li>
                   <Link
-                    className="text-white inline-block py-3 md:px-4 hover:text-primary text-lg font-medium"
+                    className="text-white inline-block py-2 md:px-4 hover:text-primary text-lg font-medium"
                     to={menu.link}
                   >
                     {menu.name}
@@ -106,7 +106,7 @@ const Header = () => {
             +91 70428 60653
           </Link>
         </div>
-        <div className="itemContactSide border-b border-zinc-700 py-5 my-5 text-center">
+        <div className="itemContactSide border-b border-zinc-700 py-5 md:my-5 text-center">
           <p className="md:text-4xl text-3xl text-primary">
             <i className="fa-solid fa-envelope"></i>
           </p>
@@ -118,7 +118,7 @@ const Header = () => {
             mohdjunaid0612@gmail.com
           </Link>
         </div>
-        <div className="itemContactSide border-b border-zinc-700 py-5 my-5 text-center">
+        <div className="itemContactSide border-b border-zinc-700 py-5 md:my-5 text-center">
           <p className="md:text-4xl text-3xl text-primary">
             <i className="fa-solid fa-map-marker-alt"></i>
           </p>
