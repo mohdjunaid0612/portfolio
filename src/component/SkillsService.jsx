@@ -58,7 +58,7 @@ const SkillsService = () => {
           <div className="w-20 p-4 bg-gray-200 rounded-full m-auto group-hover:bg-primary ease-in duration-300">
             <img src={skill.img} alt={skill.name} />
           </div>
-          <h3 className="text-2xl font-bold my-4">{skill.name}</h3>
+          <h3 className="md:text-2xl text-xl font-bold my-4">{skill.name}</h3>
           <p className="text-zinc-500">{skill.desc}</p>
         </div>
       ))}

@@ -16,6 +16,26 @@ const HomeProjectSlider = () => {
     slidesToScroll: 1,
     arrows: false,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024, // tablets
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768, // small tablets and large phones
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480, // mobile phones
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   const [projects, setProjects] = useState([]);
@@ -27,7 +47,7 @@ const HomeProjectSlider = () => {
     <>
       <ProjectSlider {...settings}>
         {projects.map((project) => (
-          <div className="itemProject px-3" key={project.id}>
+          <div className="itemProject md:px-3 px-1" key={project.id}>
             <div className="innerProject bg-white hover:bg-emerald-50 ease-in duration-300 rounded-lg">
               <div className="rounded-t-lg bg-sky-50">
                 <img

@@ -52,7 +52,7 @@ const ExperienceTimeline = () => {
       {/* Timeline */}
       <div className="relative">
         {/* Timeline Line */}
-        <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 via-green-400 to-orange-400"></div>
+        <div className="absolute md:left-8 left-3 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 via-green-400 to-orange-400"></div>
 
         {/* Timeline Items */}
         <div className="space-y-12">
@@ -61,13 +61,13 @@ const ExperienceTimeline = () => {
               <div key={exp.company} className="relative group">
                 {/* Timeline Dot */}
                 <div
-                  className={`absolute left-6 w-4 h-4 rounded-full bg-gradient-to-r ${exp.color} border-4 border-white shadow-lg z-10 group-hover:scale-125 transition-transform duration-300`}
+                  className={`absolute md:left-6 left-1 w-4 h-4 rounded-full bg-gradient-to-r ${exp.color} border-4 border-white shadow-lg z-10 group-hover:scale-125 transition-transform duration-300`}
                 ></div>
 
                 {/* Content Card */}
-                <div className="ml-20 group-hover:translate-x-2 transition-all duration-300">
+                <div className="md:ml-20 ml-6 group-hover:translate-x-2 transition-all duration-300">
                   <div
-                    className={`${exp.bgColor} ${exp.borderColor} border-2 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden`}
+                    className={`${exp.bgColor} ${exp.borderColor} border-2 rounded-2xl md:p-8 p-4 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden`}
                   >
                     {/* Background Pattern */}
                     <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
@@ -78,13 +78,13 @@ const ExperienceTimeline = () => {
 
                     {/* Header */}
                     <div className="flex items-start justify-between mb-6 relative z-10">
-                      <div className="flex items-start gap-4">
+                      <div className="flex flex-wrap items-start gap-4">
                         <div
                           className={`p-3 rounded-xl bg-gradient-to-r ${exp.color} shadow-lg`}
                         >
                           <i className={`${exp.icon} text-white text-xl`}></i>
                         </div>
-                        <div>
+                        <div className="md:w-auto w-full">
                           <h3 className="text-2xl font-bold text-gray-900 mb-1">
                             {exp.company}
                           </h3>
@@ -154,7 +154,7 @@ const ExperienceTimeline = () => {
       </div>
 
       {/* Career Stats */}
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="mt-16 grid grid-cols-2 md:grid-cols-3 md:gap-6 gap-4">
         <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div className="text-3xl font-bold text-blue-600 mb-2">7+</div>
           <div className="text-gray-600">Years Experience</div>
