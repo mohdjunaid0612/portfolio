@@ -27,7 +27,7 @@ const Home = () => {
         <div className="bannerText absolute top-0 start-0 w-[100%] h-[100%] pt-[6rem] flex items-center">
           <div className="container mx-auto md:px-4 px-3">
             <div className="flex w-full flex-wrap gap-4 items-center justify-between">
-              <div className="md:w-[60%] w-full pe-6">
+              <div className="md:w-[60%] w-full md:pe-6">
                 <p className="text-sm text-white uppercase">
                   <i className="fab fa-asterisk me-2 text-primary"></i> Welcome
                   to my creative portfolio
